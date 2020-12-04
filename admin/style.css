@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(bg2.jpg);
+  background-size: cover;
+  width: 100%;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.box h2{
+  margin: 0 0 30px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+}
+.box .input-box{
+  position: relative;
+}
+.box .input-box input{
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+.box .input-box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  font-size: 16px;
+  color: #fff;
+  transition: .5s;
+}
+.box .input-box input:focus ~ label,
+.box .input-box input:valid ~ label{
+  top: -18px;
+  left: 0px;
+  color: #03a9f4;
+  font-size: 12px;
+}
+.box input[type="submit"]{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #227be3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+span{
+  color: #fff;
+}
+.box input[type="submit"]:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.move-area{/*normally use body*/
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 45%;
+  position: absolute;
+  top: px;
+  left: 34px;
+  z-index: 0
+}
+.container {
+  width: 100%;
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #CCC;
+}
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
