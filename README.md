@@ -1,6 +1,6 @@
-# MyPortfolio
+# Portfolio
 
-### ----> [Demo](https://faheemmehdi.000webhostapp.com/) <----
+
 ### Languages
 - HTML
 - CSS
