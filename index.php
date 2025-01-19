@@ -8,7 +8,7 @@
    
    if (!$conn) {
       header("location:dbnotcon.php");
-   }
+   } 
    ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
